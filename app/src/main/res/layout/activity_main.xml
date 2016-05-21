@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spaceBakckround"
+    tools:context="com.slmyldz.updatescreen.MainActivity">
+
+    <com.pddstudio.starview.StarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:rotation="45"
+        android:tint="@android:color/white"
+        android:src="@drawable/rocket"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:id="@+id/plane"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/fire"
+        android:rotation="45"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/plane"
+        android:layout_alignLeft="@+id/plane"
+        android:layout_alignStart="@+id/plane">
+
+        <ImageView
+            android:rotation="180"
+            android:layout_marginTop="18dp"
+            android:tint="@android:color/white"
+            android:src="@drawable/triangle"
+            android:layout_width="22dp"
+            android:layout_height="25dp"
+            android:id="@+id/triangle"
+            android:layout_alignBottom="@+id/plane"
+            android:layout_alignLeft="@+id/fire"
+            android:layout_alignStart="@+id/fire"
+            android:layout_marginLeft="2dp" />
+
+        <ImageView
+
+            android:tint="@android:color/white"
+            android:src="@drawable/star"
+            android:layout_width="26dp"
+
+            android:layout_height="25dp"
+
+        />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:alpha="0"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            android:id="@+id/light3"
+            android:rotation="45"
+            android:background="@drawable/star"
+            android:layout_width="0.2dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fire"
+            android:layout_toEndOf="@+id/fire"></View>
+
+        <View
+            android:alpha="0"
+            android:layout_gravity="right"
+            android:id="@+id/light"
+            android:rotation="45"
+            android:background="@drawable/star"
+            android:layout_width="0.2dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></View>
+
+        <View
+            android:alpha="0"
+            android:layout_gravity="left"
+            android:visibility="invisible"
+            android:id="@+id/light2"
+            android:rotation="45"
+            android:background="@drawable/star"
+            android:layout_width="0.2dp"
+            android:layout_height="250dp"
+            android:layout_above="@+id/plane"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+           ></View>
+
+
+        <View
+            android:alpha="0"
+            android:layout_gravity="bottom|left"
+            android:id="@+id/light4"
+            android:rotation="45"
+            android:background="@drawable/star"
+            android:layout_width="0.2dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fire"
+            android:layout_toEndOf="@+id/fire"></View>
+
+        <View
+            android:alpha="0"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/light5"
+            android:rotation="45"
+            android:background="@drawable/star"
+            android:layout_width="0.2dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fire"
+            android:layout_toEndOf="@+id/fire"></View>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
