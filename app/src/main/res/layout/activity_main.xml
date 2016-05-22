@@ -108,18 +108,6 @@
 
         <View
             android:alpha="0"
-            android:layout_gravity="bottom|left"
-            android:id="@+id/light4"
-            android:rotation="45"
-            android:background="@drawable/star"
-            android:layout_width="0.2dp"
-            android:layout_height="250dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/fire"
-            android:layout_toEndOf="@+id/fire"></View>
-
-        <View
-            android:alpha="0"
             android:layout_gravity="bottom|right"
             android:id="@+id/light5"
             android:rotation="45"

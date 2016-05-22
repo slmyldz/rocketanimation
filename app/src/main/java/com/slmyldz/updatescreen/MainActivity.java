@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         final View light1 =   findViewById(R.id.light);
         final View light2 =   findViewById(R.id.light2);
         final View light3 =   findViewById(R.id.light3);
-        final View light4 =   findViewById(R.id.light4);
         final View light5 =   findViewById(R.id.light5);
 
 
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         set.start();
 
 
-        startRandomLights(new View[]{light1,light2,light3,light4,light5});
+        startRandomLights(new View[]{light1,light2,light3,light5});
 
     }
 
